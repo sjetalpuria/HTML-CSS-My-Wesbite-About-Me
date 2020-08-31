@@ -18,6 +18,7 @@ h4{
   color: #c1f7fd;
 }
 
+
 /* To add background*/
 html {
   height: 100%;
@@ -26,8 +27,10 @@ html {
 }
 body {
   background:transparent;
+  overflow-x: hidden;
   }
  
+  
 .lamp{
     position: absolute;
     top: 100%;
@@ -218,6 +221,7 @@ body {
   }
   
   
+
 /* Menu block*/
 .inline-block
 {
@@ -239,25 +243,34 @@ padding-inline-end:100%;
 .inline-block_logo
 {
 width:10%;
-padding-left: 50%;
+padding-left: 50% ;
 text-align: center;
 }
 
 /* Nav Block*/
-nav
+ul
 {
+  
 width: 73%;
 padding-left: 45%;
-color: #ffe1a0;
+color: #ffe1a0 ;
 }
+
+li{
+    
+  display: inline-block;
+  vertical-align: middle;
+  color:black;
+  margin: 0px;
+  margin-right:25px;
+  }
 
 /* Hero Block*/
 .heroimg
 {
   
   height: 600px;
-/*padding: 25px; */   
-  padding-right: 100%;
+  padding: 25px;    
 
 }
 
@@ -274,7 +287,7 @@ color: #ffe1a0;
  color: #ffe1a0;
 font-family: Source Sans Pro;
 font-size: 16px;
-font-variant: normal;
+
 }
 
 
@@ -285,8 +298,20 @@ font-variant: normal;
 height: 220px;
 width:220px;
 display: inline-block;
-margin-left: 65%;
+padding-left: 75% ;
+}
 
+/*Grid Areas*/
+.GridAreas
+{
+  grid-area: myArea;
+}
+
+/*Grid Conatiner*/
+.GridAreas
+{
+  display: grid;
+  grid-template-areas: 'myArea myArea myArea myArea' ;
 }
 
 
@@ -295,6 +320,15 @@ margin-left: 65%;
   display:flex;
   width: 100%;
  
+}
+
+@media screen and (max-width: 600px)
+{
+  .Flex_mySkills
+    {
+      flex-direction: row;
+      
+    }
 }
 
 .list
@@ -308,24 +342,67 @@ margin-left: 65%;
 {
   display:flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 
 /*footer block*/
 footer
 {
-background-color: white;
-padding-left: 50% ;
-color: black;
+background-color: #e0acf6;
+height: 100px;
+width: auto;
+padding-left: 25px ;
+
 }
 
 /*footer content block*/
-li{
+
+
+  /*media-only screen*/
+  @media screen and (max-width: 600px) {
+    .Flex_mySkills
+    {
+      flex-direction: row;
+      
+    }
+    .inline-block_Skills
+    {
+      display:flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+
+    .list
+    {
+      display:flex; 
+      flex-direction: row;
+      color: #ffe1a0;
+    }
+
+    li{
     
-display: inline-block;
-vertical-align: middle;
-color:black;
-margin: 0px;
-margin-right:25px;
-}
+      display: inline-block;
+     
+      color:black;
+      margin: 0px;
+      
+      }
+
+    
+    .Grid_Container_Case_Studies
+    {
+      grid-gap : 20px;
+      
+    }
+     
+    .Case_studies_images
+    {
+      height: 220px;
+      width: 220px;
+      justify-content: center;
+      padding-top: 75%;
+      padding-left: 0rem;
+      
+    }
+  }

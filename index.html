@@ -19,11 +19,11 @@
             <img src="Images/Logo.png">
         </div>
 
-        <nav class="inline-block">
+        <nav class="inline-block_nav">
             <ul>
-                <li class="inline-block"><a href="#About Me"> About Me</a></li>
-                <li class="inline-block"><a href="#Case Studies"> Work</a></li>
-                <li class="inline-block"><a href = "#Contact"> Contact</a></li>
+                <li><a href="#About Me">About Me</a></li>
+                <li><a href="#Case Studies"> Work</a></li>
+                <li><a href = "#Contact"> Contact</a></li>
                 
             </ul>
         </nav>
@@ -58,15 +58,16 @@
         </header> 
                 
         <!--Case Studies section starts here-->
-        <section class="Flex_Case_Studies"> 
+        <!-- Case Studies  section coded using CSS grid -->
+        <section class="Grid_Container_Case_Studies"> 
 
           <div id="Case Studies">
             <h1>
               Case Studies
             </h1>
             
-              <div class="Content">
-                <h2 class=Align_hEading>
+              <div class="GridAreas">
+                <h2 class= "Align_hEading">
                   Department Of Homeland Security
                 </h2>
                   <div class="Case_studies_images">
@@ -76,6 +77,19 @@
                    </div>
                   
               </div>
+
+              <div class="GridAreas">
+                <h2 class= "Align_hEading">
+                  Non-profit Angel Cat Pet Adoptions
+                </h2>
+                  <div class="Case_studies_images">
+                    
+                   <img src="Images/US_Homeland_ Security_Mockup.png">
+                   <button>View Case Study</button>
+                   </div>
+                  
+              </div>
+
           </div>
          </section>
           
@@ -95,6 +109,84 @@
               
             </div>
          </div>
+         
+         <!--Skills section starts here-->
+         <!-- My UX Skills section coded using CSS flex -->
+         <section class="MySkills">
+
+          <h1>My UX Skills</h1>
+
+          <div class="Flex_mySkills">
+
+            <div class="Image_Skills">
+              
+              <img src="Images/My_Skills.jpg">
+            
+              <div class="inline-block_Skills">
+                <div>
+                  <h4>Research</h4>
+
+                  <ul>
+                    <li class="list">User Interviews </li>
+                     <li class="list"> Data Synthesis and Analytics </li>
+                      <li class="list"> Web Analytics</li>
+                      <li class="list">Persona Creation </li>
+                      <li class="list">A/B Testing</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4>UI Design</h4>
+
+                  <ul>
+                    <li class="list">Accessible Design</li>
+                    <li class="list">Data Visualization </li>
+                     <li class="list"> Mockups </li>
+                     <li class="list">Prototyping</li> 
+                     <li class="list"> Storyboarding</li>
+                     <li class="list">Sketching</li>
+                     <li class="list"> UI Specification </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4>Graphic Design</h4>
+
+                  <ul>
+                    <li class="list">Branding </li>
+                      <li class="list">Creativity</li>
+                      <li  class="list">Gestalt Principles</li>
+                      <li class="list">Icon Design</li>
+                      <li class="list">Imagery</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4>Communication</h4>
+
+                  <ul>
+                    <li class="list">Collaboration</li>
+                     <li class="list">Empathy</li> 
+                      <li class="list">Presenting</li>
+                      <li class="list">Project Management</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4>Front-end</h4>
+
+                  <ul>
+                    <li class="list">HTML/CSS</li>
+                     <li class="list">Java Script</li> 
+                     <li class="list">Bootstrap</li>
+                     <li class="list">Github</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </section>
          
          
           <!--Footer section starts here-->
