@@ -1,1 +1,1 @@
-# UX_UI_HW_18
+During my Frontend learning in UCI we had to design and deliver our own HTML/CSS/JS website into different milestones. This is the 2nd milestone in which I have designed and developed my (old) website's about me page.
